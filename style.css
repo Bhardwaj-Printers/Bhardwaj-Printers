@@ -224,6 +224,37 @@ HERO SECTION
     transform:translateY(-3px);
 }
 
+.stats-section{
+    padding:80px 5%;
+    background:#fff;
+}
+
+.stats-section .container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.stat-box{
+    flex:1;
+    min-width:200px;
+    background:#f8f9fa;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat-box h3{
+    font-size:40px;
+    color:#0b2d4d;
+}
+
+.stat-box p{
+    margin-top:10px;
+    font-weight:600;
+}
+
 /* ==========================================
 QUOTE CARD
 ========================================== */
@@ -979,7 +1010,7 @@ PORTFOLIO
 
     overflow:hidden;
 
-    transition:.4s;
+    transition:.4s ease;
 
     box-shadow:
     0 10px 30px rgba(0,0,0,.08);
@@ -990,7 +1021,7 @@ PORTFOLIO
     transform:translateY(-10px);
 
     box-shadow:
-    0 20px 40px rgba(0,0,0,.12);
+    0 15px 35px rgba(0,0,0,.15);
 }
 
 .portfolio-image{
@@ -1047,6 +1078,30 @@ PORTFOLIO
 
 }
 
+
+.testimonials{
+    padding:80px 5%;
+    background:#f4f6f8;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stars{
+    color:gold;
+    font-size:20px;
+    margin-bottom:15px;
+}
 
 
 /* ==========================================
@@ -1751,4 +1806,73 @@ img.loaded{
 
 img{
     opacity:1;
+}
+
+
+
+
+/* .whatsapp-btn{
+    position:fixed;
+    bottom:25px;
+    left:25px;
+
+    width:60px;
+    height:60px;
+
+    background:#25d366;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:28px;
+
+    text-decoration:none;
+
+    z-index:999;
+} */
+
+.whatsapp-btn{
+position:fixed;
+bottom:25px;
+left:25px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:white;
+z-index:999;
+}
+
+.map-container {
+    margin-top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.testimonial-card h4{
+    color:#f4b400;
+    margin:15px 0;
 }
